@@ -110,7 +110,7 @@ You just need to pass a reference to an Element. Obtained via
 Type: **string**
 </td>
 <td markdown="1">
-Restrict the search results to a specific type.
+Restrict the search results to one or more types.
 
 Available types:
 
@@ -122,6 +122,9 @@ Available types:
 - townhall
 - airport
 
+Enter a comma separated string to select multiple types:
+Example: `city,country` to include both cities and countries in the results.
+  
 **Default**: Search in all types.
 
 **Note**: If you restrict the search to `city` or `airport`, you probably want to disable the `aroundLatLngViaIP` option as well. This will make sure you don't get only nearby results.
